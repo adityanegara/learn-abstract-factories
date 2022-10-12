@@ -1,0 +1,16 @@
+A) Definisi
+: Abstract Factory adalah salah satu design pattern creational
+yang mengizinkan kamu untuk memproduksi keluarga atau objek yang
+berelasi tanpa mendefinisikan classnya secar alangsung. Jadi
+hanya dari objek yang dilempar, dengan sebuah class factory, kita
+langsung dapat mendapatkan hasil produknya.
+
+B) Check list untuk menerapkan Abstract Factory
+: 1) Tentukan apakah pembuatan object ialah permasalahan
+  2) Petakan kombinasi class.
+  3) Definisikan interface factory yang berisi method factory
+  setiap class.
+  4) Definisikan class yang berasal dari factory untuk setiap platform
+  yang mengenkapsulasi semua referensi ke new operator
+
+C) 
