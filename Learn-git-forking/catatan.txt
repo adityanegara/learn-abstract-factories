@@ -1,0 +1,52 @@
+A) Definisi Forks
+: Menduplikasi repository project orang lain ke project kita
+sendiri. Dengan tujuan antara mengajukan perubahan kepada
+project orang lain dimana anda tidak memiliki hak akses, atau
+menjadikan project orang lain tersebut sebagai starting point
+project anda. 
+
+B) Prosedur Forking
+: 1) Navigasi kepada project yang ingin anda repo.
+  2) Pada kanan atas ada tombol fork.
+  3) Pilih owner dari project yang anda fork.
+  4) Ganti nama dari project yang di fork(opsional)
+  5) Tambahkan deskripsi dari form(opsional)
+  6) Pilih opsi untuk hanya mengcopy default brach atau 
+  semua branch.
+  7) Click fork.
+
+C) Mengclone project yang di fork.
+: 1) Buka halaman project anda yang di fork.
+  2) Pada kanan atas click code.
+  3) copy repo url.
+  4) buka folder tempat anda ingin clone.
+  5) ketikan command
+    : git clone <repo url>
+
+D) Mengkonfigurasi Git untuk sync repo fork dengan original repo
+: 1) Buka halaman original repo.
+  2) Pada kanan atas click code.
+  3) Copy URL dari original repo.
+  4) buka git bash pada project repo fork.
+  5) Tambahkan remote upstream dengan command
+    : git remote add upstream <original repo url>
+
+E) Sync original repo branch
+: 1) buka git bash pada project repo fork.
+  2) fetch semua branch dari upstream
+  : git fetch <nama remote>
+  3) Checkout ke branch main lokal anda.
+  4) Merge branch main lokal anda dengan upstream.
+  : git merge <nama remote>/<nama branch>
+
+F) Membuat pull request dari repo fork.
+  : 1) Navigasi ke repo original.
+    2) Navigasi ke halaman pull request.
+    3) Click new Pull Request
+    4) Click compare accross forks.
+    5) Pada base repository isikan repo original.
+    6) Pada base repository isikan branch yang ingin diupdate.
+    7) Pada head repository isikan repo fork.
+    8) Pada head repository isikan branch yang ingin mengupdate.
+    9) Isikan judul dan deskripsi dari pull request.
+    10) Click Create Pull Request.
